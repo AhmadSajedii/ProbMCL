@@ -145,7 +145,7 @@
         <img src="static/images/ProbMCL.png" alt="MY ALT TEXT"/>
       </figure>
       <h2 class="subtitle has-text-centered">
-        <h1 class="title is-1 publication-title">ProbMCL </h1>: Illustration of the probabilistic multi-label contrastive learning framework (a) the contrastive stage and (b) the classification stage. In the classification stage, the MDN is discarded, and the trained
+        <strong>ProbMCL </strong>: Illustration of the probabilistic multi-label contrastive learning framework (a) the contrastive stage and (b) the classification stage. In the classification stage, the MDN is discarded, and the trained
             encoder is retained. (c) The internal architecture of the Mixture Density Network (MDN).
       </h2>
     </div>
@@ -161,8 +161,16 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            ProbMCL: Illustration of the probabilistic multi-label contrastive learning framework (a) the contrastive stage and (b) the classification stage. In the classification stage, the MDN is discarded, and the trained
-            encoder is retained. (c) The internal architecture of the Mixture Density Network (MDN).
+            Multi-label image classification presents a challenging task in many domains, including computer vision and medical imaging. Recent advancements have introduced
+            graph-based and transformer-based methods to improve performance and capture label dependencies. However, these methods often include complex modules that entail
+            heavy computation and lack interpretability. In this paper, we propose Probabilistic Multi-label Contrastive Learning (ProbMCL), a novel framework to address these
+            challenges in multi-label image classification tasks. Our simple yet effective approach employs supervised contrastive learning, in which samples that share enough
+            labels with an anchor image based on a decision threshold are introduced as a positive set. This structure captures label dependencies by pulling positive pair
+            embeddings together and pushing away negative samples that fall below the threshold. We enhance representation learning by incorporating a mixture density network
+            into contrastive learning and generating Gaussian mixture distributions to explore the epistemic uncertainty of the feature encoder. We validate the effectiveness
+            of our framework through experimentation with datasets from the computer vision and medical imaging domains. Our method outperforms the existing state-of-the-art
+            methods while achieving a low computational footprint on both datasets. Visualization analyses also demonstrate that ProbMCL-learned classifiers maintain a meaningful
+            semantic topology.
           </p>
         </div>
       </div>
